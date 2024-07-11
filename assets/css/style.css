@@ -181,6 +181,13 @@ footer a:hover {
   margin: 0 auto 20px;
 }
 
+.profile-pic-small {
+  border-radius: 50%;
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
