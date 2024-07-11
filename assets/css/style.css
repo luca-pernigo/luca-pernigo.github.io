@@ -57,10 +57,11 @@ header nav ul li a:hover {
 /* Profile Picture Styles */
 .profile-pic-small {
   width: 100px;
-  height: 150px;
+  height: auto;
   display: block;
   margin: 0 auto 20px;
 }
+
 
 /* Main Content Styles */
 main {
