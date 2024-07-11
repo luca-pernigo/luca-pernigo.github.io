@@ -6,6 +6,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+/* General Styles */
 body {
   background-color: #1a1a2e;
   padding: 20px;
@@ -14,203 +15,88 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #f5f5f5;
-  margin: 0 0 10px;
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height: 1.2;
-}
-
-h1 {
+header h1 {
   font-size: 36px;
   font-weight: 600;
+  color: #ffa500; /* Orange */
+  margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 28px;
-  color: #c1c1c1;
-  font-weight: 500;
-}
-
-h3, h4, h5, h6 {
-  color: #bdbdbd;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-a {
-  color: #1abc9c;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #16a085;
-}
-
-a small {
-  font-size: 11px;
-  color: #999;
-  margin-top: -0.3em;
-  display: block;
-}
-
-a:hover small {
-  color: #777;
-}
-
-.wrapper {
-  width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-header {
-  width: 300px;
-  float: left;
-  position: fixed;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-header ul {
-  list-style: none;
-  padding: 5px 0;
-  background: #0f3460;
-  width: 250px;
-  border-radius: 5px;
-}
-
-header li {
-  width: 100%;
-  border-bottom: 1px solid #2e2e3a;
-}
-
-header ul a {
-  display: block;
-  padding: 10px;
-  background: #0f3460;
-  border: 2px solid #2e2e3a;
-  width: 230px;
-  text-align: center;
-  height: auto;
-  font-size: 16px;
-  font-weight: normal;
-  color: #eaeaea;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-
-header ul a:hover {
-  color: #1abc9c;
-  border-color: #1abc9c;
-}
-
-header ul a:active {
-  background-color: #1abc9c;
-  border-color: #1abc9c;
-  color: #fff;
-}
-
-section {
-  width: calc(100% - 320px);
-  float: right;
-  padding: 20px;
-  background: #0f3460;
-  border-radius: 5px;
-}
-
-section table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #1a1a2e;
-  color: #eaeaea;
-  border-radius: 5px;
-}
-
-section table td {
-  text-align: left;
-  vertical-align: top;
-  padding: 10px;
-  border-bottom: 1px solid #2e2e3a;
-}
-
-section ol {
-  padding-left: 20px;
-  background: #1a1a2e;
-  width: 100%;
-  border-radius: 5px;
-  color: #eaeaea;
-}
-
-section table strong {
-  font-weight: bold;
-  color: #f5f5f5;
-}
-
-footer {
-  width: 300px;
-  float: left;
-  position: fixed;
-  bottom: 50px;
-  font-size: 12px;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-footer a {
-  font-size: 12px;
-  color: #999;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: #777;
-}
-
-.profile-pic {
-  border-radius: 50%;
-  width: 40px;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.profile-pic-small {
-  border-radius: 50%;
-  width: 100px;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-nav ul {
+header nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+header nav ul li {
   margin: 0;
 }
 
-nav ul li {
-  margin: 10px 0;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px;
-  background: #0f3460;
+header nav ul li a {
+  padding: 10px 15px;
+  background: #6a0dad; /* Violet */
   color: #eaeaea;
   text-decoration: none;
-  border: 2px solid #2e2e3a;
   border-radius: 5px;
-  transition: all 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #1abc9c;
-  border-color: #1abc9c;
+header nav ul li a:hover {
+  background: #ffa500; /* Orange */
+  color: #000;
 }
 
+/* Profile Picture Styles */
+.profile-pic-small {
+  width: 100px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Main Content Styles */
+main {
+  background: #1a1a2e; /* Black */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+main h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffa500; /* Orange */
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #6a0dad; /* Violet */
+}
+
+table td:first-child {
+  width: 150px;
+  font-weight: bold;
+  color: #ffa500; /* Orange */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin-top: 20px;
+}
